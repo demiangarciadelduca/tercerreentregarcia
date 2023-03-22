@@ -18,6 +18,17 @@ nav {
     transition: 3s;
 }
 
+body {
+    background-color: $back-blanco;
+    color: $color;
+    background-size: cover;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ques;
+}
+
 h1 {
     font-size: xx-large;
     color: $color;
@@ -56,22 +67,10 @@ h6 {
 
 h1 ul li {
     /*todos las paginas llevan este elemento de navegacion*/
-
     font-size: large;
     line-height: 50%;
     font-style: italic;
     color: $color;
-}
-
-body {
-    background-color: $back-blanco;
-    color: $color;
-    background-size: cover;
-}
-
-html {
-    font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ques;
 }
 
 /*aqui va ubicado el css del archivo index*/
@@ -133,7 +132,7 @@ div columna1 {
 }
 
 p {
-    float: inline-end;
+display: inline-block;
 }
 
 .inicio {
@@ -152,34 +151,6 @@ img {
     margin: auto;
 }
 
-b p {
-    /* este texto va en negrita  */
-    text-align: end;
-}
-
-div columna1 {
-    float: left;
-    width: 600px;
-    height: 600px;
-    margin-right: 1em;
-}
-
-.galeria {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: $centro;
-}
-
-.galeria img {
-    /* diseño se aplica a las imagenes de la galeria */
-    max-width: 400px;
-    padding: $padd;
-}
-
-p {
-    float: inline-end;
-}
-
 .inicio {
     display: $flex;
     flex-flow: wrap-reverse;
@@ -195,10 +166,13 @@ ul li {
     text-align: $centro;
 }
 
-.parent {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+.parent
+// uso de grid//
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
+
