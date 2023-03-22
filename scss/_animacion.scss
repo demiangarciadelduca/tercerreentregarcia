@@ -2,10 +2,13 @@
     0% {
         background:$back-blanco;
         left: 125px;
+        overflow: hidden;
     }
     100% {
         background:$back-blanco;
         left: 1250px;
+        overflow: hidden;
+
     }
 }
 #milogo {
@@ -18,4 +21,6 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease;
     margin-top:$padd;
+    overflow: hidden;
+
 }

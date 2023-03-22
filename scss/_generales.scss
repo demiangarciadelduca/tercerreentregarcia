@@ -109,7 +109,7 @@ img {
 
 b p {
     /* este texto va en negrita  */
-    text-align: center;
+    text-align: $centro;
 }
 
 div columna1 {
@@ -133,6 +133,9 @@ div columna1 {
 
 p {
 display: inline-block;
+padding: 10px;
+margin-top: 10px;
+margin-left: 100px;
 }
 
 .inicio {
@@ -164,6 +167,7 @@ img {
 
 ul li {
     text-align: $centro;
+    list-style: none;
 }
 
 .parent
@@ -175,4 +179,3 @@ ul li {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
-
