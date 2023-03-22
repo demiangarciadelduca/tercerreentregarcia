@@ -1,0 +1,21 @@
+@keyframes mianimacion {
+    0% {
+        background:$back-blanco;
+        left: 125px;
+    }
+    100% {
+        background:$back-blanco;
+        left: 1250px;
+    }
+}
+#milogo {
+    width: 150px;
+    height: 150px;
+    animation-name: mianimacion;
+    animation-duration: 10s;
+    position: relative;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    margin-top:$padd;
+}

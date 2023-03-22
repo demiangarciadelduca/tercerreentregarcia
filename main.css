@@ -1,0 +1,142 @@
+html {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ques;
+}
+
+/*aqui va ubicado el css del archivo index*/
+nav {
+    font-size: large;
+    color: brown;
+}
+
+h1 {
+    font-size: xx-large;
+    color: black;
+    background-color: red;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+h2 {
+    color: black;
+    font-size: large;
+    background-color: red;
+}
+
+h3 {
+    color: black;
+    background-color: red;
+}
+
+h4 {
+    color: black;
+}
+
+h5 {
+    text-align: center;
+    padding: 5px;
+    padding-top: 5px;
+}
+
+h1 ul li {
+    /*todos las paginas llevan este elemento de navegacion*/
+
+    font-size: large;
+    line-height: 50%;
+    font-style: italic;
+    color: black;
+}
+
+p parrafo principal {
+    color: blue;
+}
+
+body {
+    background-color: white;
+    color: black;
+    background-size: cover;
+}
+
+.container {
+    /* se aplica a la hoja index y usados */
+    font-size: 20px;
+    background-color: red;
+    text-align:center;
+    border: 2px solid;
+    padding: 1rem;
+}
+
+.col {
+    border: 2px solid rgb(10, 7, 5);
+}
+
+
+footer {
+    /*el footer se aplica a todas las paginas html.*/
+    font-size: 20px;
+    background-color: red;
+    text-align: center;
+    grid-gap: 15px;
+    border: 2px solid;
+}
+
+img {
+    display: block;
+    margin: auto;
+
+}
+
+b p {
+    /* este texto va en negrita  */
+    text-align: end;
+}
+
+div columna1 {
+    float: left;
+    width: 600px;
+    height: 600px;
+    margin-right: 1em;
+    }
+
+.galeria {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.galeria img {
+    /* diseño se aplica a las imagenes de la galeria */
+    max-width: 400px;
+    padding: 1rem;
+}
+p {
+    float: inline-end;
+
+}
+.inicio{
+    display: flex;
+    flex-flow: wrap-reverse;
+    justify-content: center;
+}
+
+.inicio img {
+    max-width: 300px;
+    padding: 1rem;
+}
+.item {
+    background: #17237c;
+    background: rgba(23,35,124,.5);
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px auto;
+    height: 250px;
+    width: 250px;
+}
