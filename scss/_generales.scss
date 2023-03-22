@@ -15,7 +15,7 @@ nav {
     font-size: large;
     color: $color-navegacion;
     cursor: pointer;
-    transition: 3s;
+    transition: 5s;
 }
 
 body {
@@ -55,7 +55,6 @@ h4 {
 h5 {
     text-align: $centro;
     padding: 5px;
-    padding-top: 5px;
 }
 
 h6 {
@@ -81,7 +80,8 @@ h1 ul li {
     background-color: $back-rojo;
     text-align: $centro;
     transition: 1500ms;
-    border: $borde
+    border: $borde;
+    overflow: hidden;
 }
 
 .container:hover {
@@ -91,7 +91,9 @@ h1 ul li {
     color: Red;
     transform: scale(80%);
     text-align: $centro;
-    border: $borde
+    border: $borde;
+    overflow: hidden;
+
 }
 
 a:link {
@@ -135,7 +137,6 @@ p {
 display: inline-block;
 padding: 10px;
 margin-top: 10px;
-margin-left: 100px;
 }
 
 .inicio {
@@ -154,11 +155,6 @@ img {
     margin: auto;
 }
 
-.inicio {
-    display: $flex;
-    flex-flow: wrap-reverse;
-    justify-content: $centro;
-}
 
 .inicio img {
     max-width: 300px;
@@ -174,8 +170,8 @@ ul li {
 // uso de grid//
 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }

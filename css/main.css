@@ -7,7 +7,18 @@ nav {
   font-size: large;
   color: brown;
   cursor: pointer;
-  transition: 3s;
+  transition: 5s;
+}
+
+body {
+  background-color: white;
+  color: black;
+  background-size: cover;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif ques;
 }
 
 h1 {
@@ -36,7 +47,6 @@ h4 {
 h5 {
   text-align: center;
   padding: 5px;
-  padding-top: 5px;
 }
 
 h6 {
@@ -54,17 +64,6 @@ h1 ul li {
   color: black;
 }
 
-body {
-  background-color: white;
-  color: black;
-  background-size: cover;
-}
-
-html {
-  font-size: 18px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif ques;
-}
-
 /*aqui va ubicado el css del archivo index*/
 .container {
   /* se aplica a todas las hojas */
@@ -73,6 +72,7 @@ html {
   text-align: center;
   transition: 1500ms;
   border: 2px solid rgb(10, 7, 5);
+  overflow: hidden;
 }
 
 .container:hover {
@@ -83,6 +83,7 @@ html {
   transform: scale(80%);
   text-align: center;
   border: 2px solid rgb(10, 7, 5);
+  overflow: hidden;
 }
 
 a:link {
@@ -123,7 +124,9 @@ div columna1 {
 }
 
 p {
-  float: inline-end;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .inicio {
@@ -141,40 +144,6 @@ img {
   margin: auto;
 }
 
-b p {
-  /* este texto va en negrita  */
-  text-align: end;
-}
-
-div columna1 {
-  float: left;
-  width: 600px;
-  height: 600px;
-  margin-right: 1em;
-}
-
-.galeria {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.galeria img {
-  /* diseño se aplica a las imagenes de la galeria */
-  max-width: 400px;
-  padding: 1rem;
-}
-
-p {
-  float: inline-end;
-}
-
-.inicio {
-  display: flex;
-  flex-flow: wrap-reverse;
-  justify-content: center;
-}
-
 .inicio img {
   max-width: 300px;
   padding: 1rem;
@@ -182,16 +151,27 @@ p {
 
 ul li {
   text-align: center;
+  list-style: none;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 @keyframes mianimacion {
   0% {
     background: white;
     left: 125px;
+    overflow: hidden;
   }
   100% {
     background: white;
     left: 1250px;
+    overflow: hidden;
   }
 }
 #milogo {
@@ -204,6 +184,7 @@ ul li {
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   margin-top: 1rem;
+  overflow: hidden;
 }
 
 .contact_form {
