@@ -163,10 +163,6 @@ ul li {
   grid-row-gap: 10px;
 }
 
-.gridcontainer {
-  overflow: hidden;
-}
-
 @keyframes mianimacion {
   0% {
     background: white;
@@ -189,6 +185,10 @@ ul li {
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   margin-top: 1rem;
+  overflow: hidden;
+}
+
+.gridcontainer {
   overflow: hidden;
 }
 
